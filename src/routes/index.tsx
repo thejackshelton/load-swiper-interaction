@@ -1,15 +1,18 @@
-import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+
+import { component$ } from "@builder.io/qwik";
+import Carousel from "~/components/carousel/carousel";
 
 export default component$(() => {
   return (
     <>
-      <h1>Hi 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
+      <section style={{ height: "250px", background: "lightblue" }}>
+        section before
+      </section>
+      <Carousel />
+      <section style={{ height: "250px", background: "lightgreen" }}>
+        section after
+      </section>
     </>
   );
 });
